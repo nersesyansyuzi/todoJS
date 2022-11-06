@@ -55,10 +55,8 @@ body{
             position: relative;
             letter-spacing: 2px;
             background-color: #649bed;
-             .changeinput{
-
+             .changeDiv{
                 position: absolute;
-                // right: 150px;
                 right: 15px;
                 top: 10px;
                 display: none;
@@ -85,11 +83,11 @@ body{
                 display: inline;
                 &.show{
                     display: none;
-                    .fa-pen{
+                    .pen{
                         display: block;
                     }
                 }
-                .fa-pen{
+                .pen{
                     font-size: 18px;
                     color: rgb(155, 0, 0);
                     position: absolute;
@@ -99,7 +97,7 @@ body{
                  &.performed{
                     background-color: red;
                     text-decoration: line-through white;
-                    .fa-pen{
+                    .pen{
                        color: #0d0d11;
                     }
                  }
@@ -165,4 +163,3 @@ body{
 
     }
 }
-

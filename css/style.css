@@ -58,16 +58,16 @@ body {
   letter-spacing: 2px;
   background-color: #649bed;
 }
-.container ul li .changeinput {
+.container ul li .changeDiv {
   position: absolute;
   right: 15px;
   top: 10px;
   display: none;
 }
-.container ul li .changeinput input {
+.container ul li .changeDiv input {
   width: 100px;
 }
-.container ul li .changeinput button {
+.container ul li .changeDiv button {
   width: 60px;
   height: 20px;
   border: none;
@@ -76,10 +76,10 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
-.container ul li .changeinput button:active {
+.container ul li .changeDiv button:active {
   transform: scale(1.1);
 }
-.container ul li .changeinput.open {
+.container ul li .changeDiv.open {
   display: inline-block;
 }
 .container ul li .details {
@@ -88,10 +88,10 @@ body {
 .container ul li .details.show {
   display: none;
 }
-.container ul li .details.show .fa-pen {
+.container ul li .details.show .pen {
   display: block;
 }
-.container ul li .details .fa-pen {
+.container ul li .details .pen {
   font-size: 18px;
   color: rgb(155, 0, 0);
   position: absolute;
@@ -103,7 +103,7 @@ body {
   -webkit-text-decoration: line-through white;
           text-decoration: line-through white;
 }
-.container ul li .details.performed .fa-pen {
+.container ul li .details.performed .pen {
   color: #0d0d11;
 }
 .container ul li .details .delete {
