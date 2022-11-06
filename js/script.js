@@ -3,6 +3,7 @@ const form=document.querySelector("form")
 const ul=document.querySelector("ul")
 const h2=document.querySelector("h2")
 const btnAll=document.querySelector(".button")
+let div=document.querySelectorAll(".details")
 
 let title="Список задач"
 
@@ -60,10 +61,11 @@ function addTodo(){
 
 
 function showChangeButton(){
+    let details=document.querySelectorAll(".details")
     document.querySelectorAll(".pen").forEach((elem,id)=>{
         elem.addEventListener("click",()=>{
-            ul.children[id].children[1].classList.toggle("open")
-            document.querySelector(".details").classList.toggle("show")
+            details[id].classList.add("show")
+            ul.children[id].children[1].classList.add("open")
         })
     })
     
@@ -82,10 +84,10 @@ function changeTodoValue(){
 
     document.querySelectorAll(".chageButton").forEach((elem,id)=>{
         elem.addEventListener("click",()=>{
-
-            document.querySelector(".details").classList.remove("show")
-            ul.children[id].children[1].classList.toggle("open")
+            let  details=document.querySelectorAll(".details")
+            details[id].classList.remove("show")
             
+            ul.children[id].children[1].classList.remove("open")
             if(lival){
              todo[id].val=lival
              addTodo()
